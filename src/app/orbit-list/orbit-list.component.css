@@ -26,3 +26,11 @@ th, td {
     margin: 5px 10px;
     padding: 6px;
 }
+
+.content-row:nth-child(odd){
+    background: lightgrey;
+}
+
+.content-row:nth-child(even){
+    background: lightcyan;
+}
