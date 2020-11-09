@@ -13,4 +13,13 @@ export class OrbitCountsComponent implements OnInit {
   ngOnInit() {
   }
 
+  findTypesOfOrbit (type: string) {
+    let orbitTypeArray = [];
+    for (let i = 0; i < this.satellites.length; i++) {
+      if (this.satellites[i].type.toLowerCase() === type.toLowerCase()) {
+        orbitTypeArray.push(this.satellites[i]);
+      }
+    }
+    return orbitTypeArray.length;
+  }
 }
